@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-main: #07111F;
+    --bg-secondary: #0B1728;
+    --bg-card: #101F32;
+    --bg-elevated: #17283D;
+    --border-structural: #1F3552;
+    --accent-gold: #D8B15B;
+    --accent-emerald: #23B875;
+    --accent-cyan: #38BDF8;
+    --accent-danger: #E45B63;
+    --text-primary: #F4F6FA;
+    --text-secondary: #9BAABD;
+  }
+
+  body {
+    background-color: #07111F;
+    color: #F4F6FA;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Chivo', sans-serif;
+    text-wrap: balance;
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom broadcast scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F3552;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D8B15B;
+}
+
+@keyframes floodlight-shimmer {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 0.95; }
+}
+
+.floodlight-glow {
+  animation: floodlight-shimmer 4s ease-in-out infinite;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Cricket Apex Manager",
+  "description": "Premium tactical cricket management and live Hawk-Eye broadcast simulation featuring real international and franchise cricketers, live auction war rooms, and procedural stadium audio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
